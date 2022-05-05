@@ -13,6 +13,13 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>StudentScoreSystem</name>
     <description>Demo project for Spring Boot</description>
+    <developers>
+        <developer>
+            <name>
+                嘉新
+            </name>
+        </developer>
+    </developers>
     <properties>
         <java.version>1.8</java.version>
         <mysql.verson>5.1.49</mysql.verson>
@@ -41,7 +48,6 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.49</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
