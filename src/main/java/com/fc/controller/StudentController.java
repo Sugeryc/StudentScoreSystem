@@ -44,7 +44,7 @@ public class StudentController {
         student.setStuPass(studentNo.toString());
         TStudent result=studentService.selectByNo(studentNo);
         //统一返回
-        ResultObject<Object> rs=new ResultObject<Object>();
+        ResultObject<Object> rs = new ResultObject<Object>();
         if(null==result) {
             studentService.addStudent(student);
             rs.setCode(Constant.SUCCESS_RETUEN_CODE);
@@ -60,7 +60,7 @@ public class StudentController {
     public ResultObject<Object> updateStudent(TStudent student) {
         Integer total=studentService.updateStudent(student);
         //统一返回
-        ResultObject<Object> rs=new ResultObject<Object>();
+        ResultObject<Object> rs = new ResultObject<Object>();
         if(null==total||0==total) {
             rs.setCode(Constant.FAILURE_RETUEN_CODE);
             rs.setMsg("修改学生信息失败");
@@ -75,7 +75,7 @@ public class StudentController {
     public ResultObject<Object> deleteStudent(@RequestParam("studentNo") int studentNo) {
         Integer total=studentService.deleteStudent(studentNo);
         //统一返回
-        ResultObject<Object> rs=new ResultObject<Object>();
+        ResultObject<Object> rs = new ResultObject<Object>();
         if(null==total||0==total) {
             rs.setCode(Constant.FAILURE_RETUEN_CODE);
             rs.setMsg("修改学生信息失败");

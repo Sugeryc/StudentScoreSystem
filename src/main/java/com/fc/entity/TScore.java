@@ -40,4 +40,9 @@ public class TScore {
     public void setStudentId(Integer studentId) {
         this.studentId = studentId;
     }
+
+    public void setScoreTypeName(String 习题) {
+
+    }
+
 }
